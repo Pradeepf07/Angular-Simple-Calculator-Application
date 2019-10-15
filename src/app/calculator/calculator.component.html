@@ -1,0 +1,59 @@
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div style="margin-top: 15%" class="text-center">
+          <h1 style="font-weight: 900;color: #fff">MY CALCULATOR</h1>
+          <div style="margin-left: 20%;margin-right: 20%">
+            <span style="color: #fff">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque sequi aut,
+              mollitia </span>
+          </div>
+        </div>
+        <img src="../../assets/ezgif.com-crop.gif" class="img-responsive" style="margin-top: 5%">
+      </div>
+
+      <div class="col-md-6">
+        <div style="margin-top: 15%">
+          <div class="calc-screen">
+            <div class="calc-operation">{{calculatinstring}}</div>
+            <div class="calc-typed">{{result}}</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button c" (click)="ngOnInit()">C</div>
+            <div class="button l">≠</div>
+            <div class="button l">%</div>
+            <div class="button l" (click)="divisionclick()">/</div>
+          </div>
+          <div class="calc-button-row">
+            <button class="button" style="border: none" (click)="number7()">7</button>
+            <button class="button" style="border: none" (click)="number8()">8</button>
+            <button class="button" style="border: none" (click)="number9()">9</button>
+            <div class="button l" (click)="multiplicationclick()">x</div>
+          </div>
+          <div class="calc-button-row">
+            <button class="button" style="border: none" (click)="number4()">4</button>
+            <button class="button" style="border: none" (click)="number5()">5</button>
+            <button class="button" style="border: none" (click)="number6()">6</button>
+            <div class="button l" (click)="minusclick()">−</div>
+          </div>
+          <div class="calc-button-row">
+            <button class="button" style="border: none" (click)="number1()">1</button>
+            <button class="button" style="border: none" (click)="number2()">2</button>
+            <button class="button" style="border: none" (click)="number3()">3</button>
+            <div class="button l" (click)="plusclick()">+</div>
+          </div>
+          <div class="calc-button-row">
+            <button class="button" style="border: none">.</button>
+            <button class="button" style="border: none" (click)="number0()">0</button>
+            <button class="button" style="border: none">
+            </button>
+            <button class="button l" (click)="result_calculating()">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    Developed and designed by Pradeep Francis
+  </div>
+</div>

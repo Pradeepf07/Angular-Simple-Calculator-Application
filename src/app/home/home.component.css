@@ -1,0 +1,20 @@
+
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+  }
+  .d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    margin: 15px;
+    text-align: center;
+  }
